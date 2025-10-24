@@ -8,13 +8,38 @@ public class ToUpperCaseTest{
 
 
 	//Arrange
-	ToUpperCase toUpperCase = new ToUpperCase
+	ToUpperCase toUpperCase = new ToUpperCase();
 
 	//Act
-	String result = toUpperCase.convertToUpperCase();
+	String result = toUpperCase.convertToUpperCase("fathia");
 
 	//Assert
-	assertEquals(result, 0);
+	assertEquals(result, "FATHIA");
 
 	}
+
+
+	@Test
+	public void testThatItConvertsSentenceToLower(){
+
+
+	//Arrange
+	ToUpperCase toUpperCase = new ToUpperCase();
+
+	//Act
+	String result = toUpperCase.convertToUpperCase("fathia is my name");
+
+	//Assert
+	assertEquals(result, "FATHIA IS MY NAME");
+
+	}
+
+
+
+
+
+
+
+
+}
 

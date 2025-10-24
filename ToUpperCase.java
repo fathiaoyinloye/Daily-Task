@@ -1,9 +1,9 @@
 public class ToUpperCase{
 
-	public String toUpperCase(word){
+	public String convertToUpperCase(String words){
 
-		word = word.toUpperCase();
-		return word;
+		words = words.toUpperCase();
+		return words;
 
 	}
 
